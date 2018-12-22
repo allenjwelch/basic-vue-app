@@ -9,9 +9,9 @@ Vue.use(VueRouter)
 
 // 1. Define route components.
 // These can be imported from other files
-import Home from './components/Home.vue';
-import Page2 from './components/Page2.vue';
-import Page3 from './components/Page3.vue';
+import Home from './views/Home.vue';
+import Page2 from './views/Page2.vue';
+import Examples from './views/Examples.vue';
 
 // const HomePage = { template: '<div>Home</div>' }
 // const Bar = { template: '<div>Page2</div>' }
@@ -24,7 +24,7 @@ import Page3 from './components/Page3.vue';
 const routes = [
   { path: '/home', component: Home },
   { path: '/page2', component: Page2 },
-  { path: '/page3', component: Page3 }
+  { path: '/examples', component: Examples }
 ]
 
 // 3. Create the router instance and pass the `routes` option

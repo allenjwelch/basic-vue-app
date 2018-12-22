@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import HelloWorld from './HelloWorld.vue'
+// import HelloWorld from './HelloWorld.vue'
 
 export default {
     name: 'Page2',
     components: {
-        HelloWorld,
+        // HelloWorld,
     }
 }
 </script>

@@ -6,7 +6,7 @@
             <ul>
                 <li><router-link to="/home">Home</router-link></li>
                 <li><router-link to="/page2">Page 2</router-link></li>
-                <li><router-link to="/page3">Page 3</router-link></li>
+                <li><router-link to="/examples">Examples</router-link></li>
             </ul>
         </nav>
     </section>
