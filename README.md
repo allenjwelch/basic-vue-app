@@ -1,4 +1,4 @@
-# hello-world
+# Basic-Vue-App
 
 ## Project setup
 ```
