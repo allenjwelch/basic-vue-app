@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 // 1. Define route components.
 // These can be imported from other files
 import Home from './views/Home.vue';
-import Page2 from './views/Page2.vue';
+import TodoList from './views/TodoList.vue';
 import Examples from './views/Examples.vue';
 
 // const HomePage = { template: '<div>Home</div>' }
@@ -23,7 +23,7 @@ import Examples from './views/Examples.vue';
 // We'll talk about nested routes later.
 const routes = [
   { path: '/home', component: Home },
-  { path: '/page2', component: Page2 },
+  { path: '/todolist', component: TodoList },
   { path: '/examples', component: Examples }
 ]
 

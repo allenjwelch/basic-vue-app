@@ -5,7 +5,7 @@
         <nav class="navbar">
             <ul>
                 <li><router-link to="/home">Home</router-link></li>
-                <li><router-link to="/page2">Page 2</router-link></li>
+                <li><router-link to="/todolist">Todo List</router-link></li>
                 <li><router-link to="/examples">Examples</router-link></li>
             </ul>
         </nav>
@@ -18,7 +18,7 @@ export default {
     name: 'Header',
     props: {
         user: String
-    }, 
+    },
 }
 </script>
 
@@ -26,28 +26,28 @@ export default {
 .header {
     height: 50px;
     width: 100%;
-    background: #ccc; 
-    position: relative; 
-    
+    background: #ccc;
+    position: relative;
+
     .header-title {
         margin: 0;
-        position: absolute; 
-        left: 20px; 
-        top: 10px; 
+        position: absolute;
+        left: 20px;
+        top: 10px;
     }
 
     .navbar {
-        float: right; 
+        float: right;
         ul {
             li {
-                display: inline-block; 
-                padding: 0 20px; 
+                display: inline-block;
+                padding: 0 20px;
                 &:not(:last-child) {
-                    border-right: 1px solid #333; 
+                    border-right: 1px solid #333;
                 }
                 a {
-                    text-decoration: none; 
-                    color: #333; 
+                    text-decoration: none;
+                    color: #333;
                 }
             }
         }

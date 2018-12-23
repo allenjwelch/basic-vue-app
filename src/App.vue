@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 // import Fresh from './components/FreshComponent.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
@@ -17,9 +17,9 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld,
-    Header, 
-    Footer, 
+    // HelloWorld,
+    Header,
+    Footer,
   }
 }
 </script>
@@ -41,8 +41,8 @@ body {
 
   }
   img {
-    // display: block; 
-    // margin: 0 20%; 
+    // display: block;
+    // margin: 0 20%;
   }
 }
 </style>
