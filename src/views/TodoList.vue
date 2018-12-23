@@ -52,16 +52,21 @@ export default {
 <style lang="scss" scoped>
     .todo-container {
         .todo-cta {
-            width: 30%;
+            width: 100%;
             display: inline-block;
             vertical-align: top;
+            margin-bottom: 20px;
             #newItem {
                 margin: 0 10px 10px 0;
+            }
+
+            @media (min-width: 768px) {
+                width: 30%;
             }
         }
         .todo-list {
             margin: 0 auto;
-            width: 65%;
+            width: 90%;
             display: inline-block;
             text-align: center;
             li {
@@ -72,6 +77,10 @@ export default {
                     vertical-align: bottom;
                     cursor: pointer;
                 }
+            }
+
+            @media (min-width: 768px) {
+                width: 65%;
             }
         }
     }

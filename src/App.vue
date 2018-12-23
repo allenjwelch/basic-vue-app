@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :title="title"/>
     <div class="main">
         <router-view></router-view>
     </div>
@@ -9,17 +9,19 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-// import Fresh from './components/FreshComponent.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
-    // HelloWorld,
     Header,
     Footer,
+  },
+  data() {
+      return {
+          title: "Vue App",
+      }
   }
 }
 </script>

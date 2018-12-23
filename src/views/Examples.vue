@@ -1,6 +1,7 @@
+/* eslint-disable */
 <template>
     <section>
-        <h1>Examples</h1>
+        <h1>{{newTitle}}</h1>
         <p>Vue Directives</p>
 
         <div>
@@ -14,7 +15,7 @@
             <h4>Display List:</h4>
             <li v-bind:key="index" v-for="index in todos">{{index}}</li>
             <br>
-            <li v-bind:key="person" v-for="person in people">Name: {{person.name}}</li>
+            <li v-bind:key="index" v-for="index in people">Name: {{index.name}}</li>
         </ul>
     </section>
 </template>
@@ -25,11 +26,12 @@
 
 
 export default {
-    name: "examples",
+    name: "Examples",
     data() {
         return {
             message: 'Change this message',
             isTrue: true,
+            title: 'Examples',
             styleObject: {
                 color: '#333',
                 fontSize: '16px'
@@ -61,6 +63,16 @@ export default {
         },
         decreaseText: function() {
             this.styleObject.fontSize = '16px';
+        }
+    },
+    computed: {
+        newTitle: function() {
+            if(!this.isTrue) {
+                this.title = "New Title"
+            }
+            return this.title;
+            // console.log(this.title);
+            // console.log(this.isTrue);
         }
     }
 }
